@@ -1,0 +1,10 @@
+.idea
+node_modules
+config/index.js
+testconfig-apigee.js
+testconfig-redis.js
+.*.swo
+.*.swp
+npm-debug.log
+mgr-config.js
+coverage

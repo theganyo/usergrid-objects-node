@@ -1,0 +1,45 @@
+{
+  "name": "usergrid-objects",
+  "description": "ORM-style data access for Apache Usergrid.",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "author": "Scott Ganyo <scott@ganyo.com>",
+  "contributors": [
+    {
+      "name": "Scott Ganyo",
+      "email": "scott@ganyo.com",
+      "url": "https://github.com/theganyo"
+    }
+  ],
+  "homepage": "https://github.com/theganyo/usergrid-objects-node",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/theganyo/usergrid-objects-node.git"
+  },
+  "keywords": [
+    "usergrid",
+    "orm",
+    "sdk"
+  ],
+  "dependencies": {
+    "usergrid": "0.10.x",
+    "lodash": "",
+    "winston": "",
+    "validator" : "",
+    "pubsub-js" : "",
+    "inflection" : "",
+    "async": "",
+    "request": ""
+  },
+  "devDependencies": {
+    "should" : "",
+    "supertest" : "",
+    "underscore" : "",
+    "mocha" : "",
+    "volos-management-apigee": "",
+    "apigee-access": ""
+  },
+  "scripts": {
+  }
+}
