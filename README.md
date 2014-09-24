@@ -1,7 +1,7 @@
 Usergrid Objects for Node.js
 ============================
 
-Creates an Object wrapper similar to Ruby on Rails for simplified access to the Usergrid database from Node.js.
+A persistence library inspired by Ruby on Rails for accessing the Apache Usergrid database from Node.js.
 Supports the following methods:
 
 Class methods

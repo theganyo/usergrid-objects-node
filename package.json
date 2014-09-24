@@ -1,6 +1,6 @@
 {
   "name": "usergrid-objects",
-  "description": "ORM-style data access for Apache Usergrid.",
+  "description": "A persistence library inspired by Ruby on Rails for accessing the Apache Usergrid database from Node.js.",
   "version": "0.0.1",
   "license": "MIT",
   "main": "lib/index.js",
