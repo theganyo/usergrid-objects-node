@@ -36,7 +36,7 @@ async.series(
 
     // ensure no Dogs
     function(cb) {
-      scott.deleteAllDogs(function(err) {
+      Dog.deleteAll(function(err) {
         cb(err);
       });
     },
@@ -45,20 +45,46 @@ async.series(
     function(cb) {
       var calli = Dog.new({ name: 'Calli' });
       // saves and creates connection
-      scott.addDog(calli, function(err, scott) {
+      scott.addDog(calli, function(err) {
         if (err) { return cb(err); }
 
-        assert(scott.dogs);
-        assert(dog.uuid);
-        assert(dog.name === 'Calli');
+        scott.fetchDogs(function(err) {
+          if (err) { return cb(err); }
+
+          assert(scott.dogs);
+          var dog = scott.dogs[0];
+          assert(dog.uuid);
+          assert(dog.name === 'Calli');
+          cb();
+        });
       });
     },
 
-    // delete the Person
+    // delete the Person (and it's dogs)
     function(cb) {
-      scott.delete(function(err) {
-        cb(err);
+      scott.deleteAllDogs(function(err) {
+        if (err) { return cb(err); }
+
+        scott.delete(function(err) {
+          cb(err);
+        });
       });
+    },
+
+    // verify Person is gone
+    function(cb) {
+      Person.find('Scott', function(err, person) {
+        assert(err);
+        cb();
+      })
+    },
+
+    // verify dog is gone
+    function(cb) {
+      Dog.find('Calli', function(err, person) {
+        assert(err);
+        cb();
+      })
     }
 
   ],
