@@ -1,7 +1,7 @@
 {
   "name": "usergrid-objects",
   "description": "A persistence library inspired by Ruby on Rails for accessing the Apache Usergrid database from Node.js.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "main": "lib/index.js",
   "author": "Scott Ganyo <scott@ganyo.com>",
@@ -26,20 +26,19 @@
     "usergrid": "0.10.x",
     "lodash": "",
     "winston": "",
-    "validator" : "",
-    "pubsub-js" : "",
-    "inflection" : "",
+    "validator": "",
+    "pubsub-js": "",
+    "inflection": "",
     "async": "",
     "request": ""
   },
   "devDependencies": {
-    "should" : "",
-    "supertest" : "",
-    "underscore" : "",
-    "mocha" : "",
+    "should": "",
+    "supertest": "",
+    "underscore": "",
+    "mocha": "",
     "volos-management-apigee": "",
     "apigee-access": ""
   },
-  "scripts": {
-  }
+  "scripts": {}
 }
