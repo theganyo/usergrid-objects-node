@@ -1,5 +1,7 @@
 'use strict';
 
+// copy to config/index.js and replace with appropriate values....
+
 module.exports = {
 
   // https://apigee.com/usergrid/#!/getting-started/setup
