@@ -6,14 +6,12 @@
 module.exports = {
 
   // https://apigee.com/usergrid/#!/getting-started/setup
-  usergrid : {
-    URI: 'http://localhost:8080',
-    orgName: 'test-organization',
-    appName: 'test-app',
-    clientId: 'b3U6bFPqmh3BEeSJdgEmGqhCGA',
-    clientSecret: 'b3U6ZefCkk5cZg8XzQOsqGtze9Psfhw',
-//    token: 'YWMtENNLsEqLEeSXjulBm2-b8QAAAUj3ORfrWvJ5ru9US1X_LD9FJnG__q9XKSc',
-    logging: true,
-    buildCurl: true
-  }
+  URI: 'http://localhost:8080',
+  orgName: 'test-organization',
+  appName: 'test-app',
+  clientId: 'b3U6bFPqmh3BEeSJdgEmGqhCGA',
+  clientSecret: 'b3U6ZefCkk5cZg8XzQOsqGtze9Psfhw',
+//  token: 'YWMtENNLsEqLEeSXjulBm2-b8QAAAUj3ORfrWvJ5ru9US1X_LD9FJnG__q9XKSc',
+  logging: true,
+  buildCurl: true
 };
