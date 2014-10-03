@@ -89,6 +89,15 @@ describe('Base Model', function() {
     });
   });
 
+  it('find should return 404 when missing', function(done) {
+    Foo.find('missing', function(err, entity) {
+      should.exist(err);
+      should.not.exist(entity);
+      err.statusCode.should.equal(404);
+      done();
+    });
+  });
+
   it('findBy', function(done) {
     Foo.findBy(TEST_ATTRS, function(err, collection) {
       should.not.exist(err);
