@@ -3,15 +3,15 @@
 var Usergrid = require('usergrid-objects')();
 var is = Usergrid.validators;
 
-var PersonClass = Usergrid.define(Person);
-module.exports = PersonClass;
+var Persons = Usergrid.define(Person);
+module.exports = Persons;
 
-PersonClass.attrs('name', 'email');
+Persons.attrs('name', 'email');
 
-var Dog = require('./dog');
-PersonClass.hasMany('dogs', Dog);
+var Dogs = require('./dog');
+Persons.hasMany(Dogs);
 
-PersonClass.validates({
+Persons.validates({
   name:  [ is.required ],
   email: [ is.email ]
 });

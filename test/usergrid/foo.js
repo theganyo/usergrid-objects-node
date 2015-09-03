@@ -11,7 +11,7 @@ module.exports = FooClass;
 FooClass.attrs('name', 'email');
 
 var BarClass = require('./bar');
-FooClass.hasMany('bars', BarClass);
+FooClass.hasMany(BarClass);
 
 FooClass.validates({
   name:  [ validators.required ],

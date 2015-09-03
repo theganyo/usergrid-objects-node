@@ -3,12 +3,12 @@
 var Usergrid = require('usergrid-objects')();
 var is = Usergrid.validators;
 
-var DogClass = Usergrid.define(Dog);
-module.exports = DogClass;
+var Dogs = Usergrid.define(Dog);
+module.exports = Dogs;
 
-DogClass.attrs('name');
+Dogs.attrs('name');
 
-DogClass.validates({
+Dogs.validates({
   name:  [ is.required ]
 });
 
