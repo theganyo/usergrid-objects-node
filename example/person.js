@@ -3,8 +3,7 @@
 var Usergrid = require('usergrid-objects')();
 var is = Usergrid.validators;
 
-var PersonClass = {};
-Usergrid.define(PersonClass, Person);
+var PersonClass = Usergrid.define(Person);
 module.exports = PersonClass;
 
 PersonClass.attrs('name', 'email');

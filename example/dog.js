@@ -3,8 +3,7 @@
 var Usergrid = require('usergrid-objects')();
 var is = Usergrid.validators;
 
-var DogClass = {};
-Usergrid.define(DogClass, Dog);
+var DogClass = Usergrid.define(Dog);
 module.exports = DogClass;
 
 DogClass.attrs('name');

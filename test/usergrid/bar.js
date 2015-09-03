@@ -2,9 +2,7 @@
 
 var usergrid  = require('../helpers').usergrid;
 
-var BarClass = {};
-usergrid.define(BarClass, Bar);
-module.exports = BarClass;
+module.exports = usergrid.define(Bar);
 
 function Bar() {
 }
