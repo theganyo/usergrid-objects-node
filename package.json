@@ -40,5 +40,7 @@
     "volos-management-apigee": "",
     "apigee-access": ""
   },
-  "scripts": {}
+  "scripts": {
+    "test": "mocha -u exports -R spec test test/usergrid/index"
+  }
 }
